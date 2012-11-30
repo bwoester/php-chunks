@@ -70,15 +70,22 @@
 
             <!-- Main hero unit for a primary marketing message or call to action -->
             <div class="hero-unit">
-                <h1>Hello, world!</h1>
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+                <h1>Server Sent Events using chunked transfer!</h1>
+                <p>
+                This is an example of using html5 EventSource. Server side, there
+                is a php script that serves timestamps as messages. Point is: data
+                is transferred in chunked mode. This way, we can stream messages
+                without having to close the connection. Check your network console!
+                </p>
+                <!--
                 <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+                -->
             </div>
 
             <!-- Example row of columns -->
             <div class="row">
                 <div class="span12">
-                    <h2>Server Sent Events</h2>
+                    <h2>Received Messages</h2>
                     <ol id="sseList"></ol>
                 </div>
             </div>

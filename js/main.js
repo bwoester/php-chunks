@@ -4,7 +4,7 @@ if (!!window.EventSource)
     
     source.addEventListener('message', function(e) {
         //console.log(e.data);
-        $("#sseList").append('<li>'+e.data+'</li>');
+        $("#sseList").prepend('<li>'+e.data+'</li>');
     }, false);
     
     source.addEventListener('open', function(e) {
